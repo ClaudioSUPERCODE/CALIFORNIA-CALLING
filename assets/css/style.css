@@ -1,0 +1,651 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lora-VariableFont_wght.ttf";
+    src: url("../fonts/Lora-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+html {
+    font-size: 11px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ============GLOBAL=========== */
+
+h1 {
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 7rem;
+}
+
+h2 {
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 5.5rem;
+    font-weight: 500;
+}
+
+/* ============HEADER=========== */
+
+header{
+    background-color: black;
+    text-align: center;
+}
+
+header img {
+    width: 5px;
+}
+
+header article {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    padding: 7rem 0;
+}
+
+header article h1:nth-last-of-type(1) {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+header article h1:nth-last-of-type(2) {
+    margin-top: 2rem;
+}
+
+header div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    padding-bottom: 3rem;
+}
+
+header div img {
+    width: 5rem;
+}
+
+header div a {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    font-weight: bolder;
+    padding: 2rem 3.5rem;
+    transition-duration: 1s;
+}
+
+header div a:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+
+/* ===========INTRO SECTION========== */
+
+main .intro {
+    background-color: black;
+    color: white;
+    background-image: url("../pics/map.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+    padding-top: 10rem;
+}
+
+main .intro h3, main .intro h2, main .intro h4 {
+    width: 60%;
+    margin-left: 5%;
+}
+
+main .intro h3 {
+    margin-bottom: 12rem;
+}
+
+main .intro h4 {
+    padding-bottom: 6rem;
+}
+
+main .introcrossing {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 70%, rgba(255,255,255,1) 70%);
+    text-align: right;
+}
+
+main .introcrossing img {
+    width: 25%;
+    padding-top: 15rem;
+    margin-right: 10%;
+}
+
+/* ==============STUCK IN THE MIDDLE=========== */
+
+main .stuckinthemiddle img {
+    width: 22%;
+    margin: 10rem 0 0 4%;
+}
+
+main .stuckinthemiddle2 {
+    display: flex;
+    justify-content: center;
+    background-image: url("../pics/action3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: right bottom;
+}
+
+main .stuckinthemiddle2 div {
+    width: 34%;
+}
+
+main .stuckinthemiddle2 div h3 {
+    line-height: 1;
+    width: 85%;
+    margin-bottom: 3rem;
+}
+
+main .stuckinthemiddle2 div h2 {
+    width: 100%;
+    margin: 0;
+    line-height: 2;
+    padding-bottom: 15rem;
+}
+
+main .stuckinthemiddle3 {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr 1.7fr 1fr;
+    grid-template-rows: 10rem 10rem 10rem;
+}
+
+main .stuckinthemiddle3 img:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+main .stuckinthemiddle3 img:nth-of-type(2) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+main .stuckinthemiddle4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+    background-image: url("../pics/action6.jpeg");
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: left top;
+}
+
+main .stuckinthemiddle4 h2 {
+    width: 33%;
+    line-height: 2;
+    margin: 0 0 10rem 0;
+    padding-top: 10rem;
+
+}
+
+main .sitmcrossing {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 70%, rgba(0,0,0,1) 70%);
+    display: flex;
+    justify-content: right;
+}
+
+main .sitmcrossing img {
+    width: 25%;
+    margin-right: 10%;
+}
+
+/* =============THE GOLDEN BEAR=========== */
+
+main .goldenbear {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 13rem 10rem 0 10rem;
+}
+
+main .goldenbear div {
+    width: 20%;
+}
+
+main .goldenbear div:nth-of-type(2) {
+    width: 30%;
+}
+
+main .goldenbear div h2 {
+    color: white;
+    margin: 0;
+    padding-bottom: 4rem;
+}
+
+main .goldenbear div h3 {
+    color: white;
+    line-height: 0.8;
+}
+
+main .goldenbear div p {
+    color: white;
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+/* ===========BEAR ART=========== */
+
+main .bearart {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10rem 10rem 10rem 10rem 5rem;
+    padding: 0 20rem 0 27rem;
+}
+
+main .bearart img {
+    grid-column: 1/5;
+    width: 105%;
+}
+
+main .bearart img:nth-of-type(2) {
+    grid-column: 5/8;
+    grid-row: 2/5;
+    width: 80%;
+}
+
+/* =========SPINNING LOGO========== */
+
+@-webkit-keyframes rotate-center {
+    0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+
+
+main .spinninglogo {
+    position: relative;
+    height: 20rem;
+}
+
+main .spinninglogo .rotate-center {
+    width: 20%;
+    -webkit-animation: rotate-center 10s linear infinite both;
+    animation: rotate-center 10s linear infinite both;
+    right: 6rem;
+    position: absolute;
+    left: 85%;
+    bottom: 3rem;
+}
+
+/* =============THE POPPY BEAR========== */
+
+main .poppybear {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 10rem 0 10rem;
+}
+
+main .poppybear div {
+    width: 20%;
+}
+
+main .poppybear div:nth-of-type(2) {
+    width: 35%;
+}
+
+main .poppybear div h2 {
+    color: black;
+    margin: 0;
+    padding-bottom: 4rem;
+}
+
+main .poppybear div h3 {
+    color: black;
+    line-height: 0.8;
+}
+
+main .poppybear div p {
+    color: black;
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+main .bearart2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+    padding: 8rem 10rem 0 10rem;
+    margin-bottom: 30rem;
+}
+
+main .bearart2 img {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    width: 120%;
+}
+
+main .bearart2 img:nth-last-of-type(2) {
+    grid-column: 2/4;
+    grid-row: 1/6;
+    width: 100%;
+}
+
+/* ===========FOOTER=========== */
+
+footer {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+footer .join {
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+}
+
+footer .join h2 {
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+footer .join p {
+    font-size: 2.5rem;
+    width: 30%;
+    margin-bottom: 5rem;
+}
+
+footer .join a {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    font-weight: bolder;
+    padding: 2rem 3.5rem;
+    transition-duration: 1s;
+}
+
+footer .join a:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+
+footer .socialm .fblogo {
+    border: hidden;
+    margin-left: 10rem;
+}
+
+footer .social a:nth-of-type(2) {
+    margin-left: 0;
+}
+
+footer .socialm a img{
+    width: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+footer .copyright {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+footer .copyright h2 {
+    padding-bottom: 2rem;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .copyright .DW-RC img {
+    width: 10rem;
+}
+
+footer .copyright .DW-RC img:nth-of-type(2) {
+    width: 15rem;
+    margin-left: 2rem;
+}
+
+
+/* ========SLIDER ANIMATION========= */
+
+footer .slider {
+    position: relative;
+}
+
+.sampleMarquee {
+    font-family: "Lora-VariableFont_wght.ttf";
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 10rem;
+    line-height: 70px;
+    padding: 15px;
+    font-weight: bold;
+    rotate: 45deg;
+    left: 61%;
+    bottom: 36rem;
+    position: relative;
+    width: 700px;
+}
+
+.sampleMarquee span {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+}
+
+/* ===========MEDIA QUERIES========= */
+
+@media only screen and (max-width: 600px) {
+
+    main .introcrossing img {
+        width: 40%;
+    }
+
+    main .stuckinthemiddle {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .stuckinthemiddle img {
+        width: 70%;
+        margin: 2rem;
+    }
+
+    main .stuckinthemiddle2 {
+        width: 100%;
+        background-size: 43%;
+        background-position: bottom center;
+    }
+
+    main .stuckinthemiddle2 div h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    main .stuckinthemiddle2 div h2 {
+        text-align: center;
+    }
+
+    main .stuckinthemiddle3 {
+        margin: 2rem 0 0 0;
+    }
+
+    main .stuckinthemiddle3 img:nth-of-type(1) {
+        grid-column: 1/4;
+    }
+
+    main .stuckinthemiddle3 img:nth-of-type(2) {
+        grid-column: 3/6;
+    }
+
+    main .stuckinthemiddle4 {
+        margin: 0;
+        background-size: 32%;
+    }
+
+    main .stuckinthemiddle4 h2 {
+        width: 70%;
+        padding-top: 15rem;
+    }
+
+    main .sitmcrossing img {
+        width: 40%;
+    }
+
+    main .goldenbear {
+        flex-direction: column;
+    }
+
+    main .goldenbear div {
+        width: 100%;
+    }
+
+    main .goldenbear div p {
+        width:35rem;
+        margin-top: 3rem;
+    }
+
+    main .goldenbear div h2 {
+        width: 20rem;
+    }
+
+    main .bearart {
+        padding: 0;
+    }
+
+    main .bearart img {
+        width: 130%;
+    }
+
+    main .spinninglogo {
+        height: 10rem;
+    }
+
+    main .spinninglogo .rotate-center {
+        width: 45%;
+        left: 65%;
+        right: 2rem;
+        bottom: -6rem;
+    }
+
+    main .poppybear {
+        flex-direction: column;
+    }
+
+    main .poppybear div p {
+        width: 35rem;
+        margin-top: 3rem;
+    }
+
+    main .poppybear div h2 {
+        width: 20rem;
+    }
+
+    main .bearart2 {
+        padding: 3rem;
+        margin: 0;
+    }
+
+    footer .join {
+        margin-left: 5rem;
+    }
+
+    footer .join h2 {
+        font-size: 2.5rem;
+    }
+
+    footer .join p {
+        width: 70%;
+    }
+
+    .sampleMarquee {
+        font-size: 5rem;
+        padding: 1rem;
+        width: 400px;
+        line-height: 4rem;
+        bottom: 51rem;
+        left: 46%;
+    }
+
+    footer .socialm .fblogo {
+        margin-left: 5rem;
+    }
+
+    footer .socialm a img {
+        width: 5rem;
+    }
+
+    footer .copyright {
+        width: 90%;
+        margin: 3rem;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    main .bearart2 img{
+        width: 105%;
+    }
+
+    main .bearart2 img:nth-last-of-type(2){
+        width: 70%;
+    }
+
+    .sampleMarquee {
+        left: 72%;
+    }
+
+}
